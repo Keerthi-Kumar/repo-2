@@ -1,0 +1,15 @@
+<html>
+    <script>
+    var onClick = function (){
+	let clickCount = 0;
+	return function (){
+		return ++clickCount;
+	}
+}();
+    
+    </script>
+
+    <body>
+        <input type="button" value="clickme" onClick="alert(onClick())"/>
+    </body>
+</html>   
